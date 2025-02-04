@@ -37,11 +37,13 @@ export const Pantalla1Screen = ({ navigation }: Props) => {
       <Button
         title='Ir persona'
         onPress={() => navigation.navigate('Persona', persona)} />
-      <TouchableOpacity
+      <TouchableOpacity style={styles.buttonPersona}
         onPress={() => navigation.navigate('Persona', persona2)}>
-        <Text>Ir persona 2</Text>
+        <Text style={styles.buttonText}>Ir persona 2</Text>
       </TouchableOpacity>
     </View>
   )
 }
+
+
 
